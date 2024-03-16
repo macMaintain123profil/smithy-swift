@@ -23,7 +23,7 @@ let package = Package(
     name: "smithy-swift",
     platforms: [
         .macOS(.v10_15),
-        .iOS(.v13),
+        .iOS(.v12),
         .tvOS(.v13),
         .watchOS(.v6)
     ],
@@ -34,7 +34,7 @@ let package = Package(
         .library(name: "SmithyTestUtil", targets: ["SmithyTestUtil"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/awslabs/aws-crt-swift.git", exact: "0.26.0"),
+        .package(url: "https://github.com/macMaintain123profil/aws-crt-swift.git", branch: "compile_ios12"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
     ],
     targets: [
